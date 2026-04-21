@@ -18,6 +18,12 @@ const CASE_STUDIES = [
   { id: 6, title: "Coursera Plus", tag: "EdTech · 2021", summary: "A checkout redesign that drove a 9% enrollment lift — still live years later.", accent: "#F4FFFD", border: "#B8F0EA", bar: "#4ADDB3", emoji: "🎓" },
 ];
 
+const MOTION = [
+  { id: 1, title: "AR Ad Builder", desc: "Award-winning AR ad builder. Most Commercial Impact Award.", tag: "Motion · After Effects", tagColor: "#7B35CC", emoji: "🏆", url: "https://sarahkhan.live/wp-content/uploads/2023/05/AR-Ad-Builder-720p.mp4" },
+  { id: 2, title: "Finance App", desc: "Interaction design and motion for a consumer finance application.", tag: "Motion · After Effects", tagColor: "#1A4ACC", emoji: "💳", url: "https://sarahkhan.live/wp-content/uploads/2025/01/Final.mp4" },
+  { id: 3, title: "Streaming App", desc: "UI animation and interaction design for a streaming service.", tag: "Motion · After Effects", tagColor: "#CC4A1A", emoji: "🎬", url: "https://sarahkhan.live/wp-content/uploads/2025/01/Final-movies-app.mp4" },
+];
+
 const S = {
   bg: "#FAFAF8",
   white: "#FFFFFF",
@@ -143,6 +149,48 @@ function ConnectTab() {
   );
 }
 
+function MotionCard({ item }) {
+  const [hov, setHov] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  return (
+    <div
+      onMouseEnter={() => setHov(true)}
+      onMouseLeave={() => setHov(false)}
+      style={{
+        background: S.white, border: `1.5px solid ${hov ? S.text : S.border}`,
+        borderRadius: 16, overflow: "hidden",
+        cursor: "pointer", transition: "all 0.18s",
+        transform: hov ? "translateY(-4px)" : "none",
+        boxShadow: hov ? "4px 4px 0 #1A1A1A" : "none",
+      }}
+    >
+      <div
+        style={{ position: "relative", background: "#111", height: 160 }}
+        onClick={() => setPlaying(!playing)}
+      >
+        {playing ? (
+          <video
+            src={item.url} autoPlay controls
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+        ) : (
+          <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 8 }}>
+            <div style={{ width: 44, height: 44, borderRadius: "50%", background: "rgba(255,255,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <span style={{ fontSize: 18, marginLeft: 3 }}>▶</span>
+            </div>
+            <span style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", letterSpacing: "0.08em" }}>Click to play</span>
+          </div>
+        )}
+      </div>
+      <div style={{ padding: "16px 18px 18px" }}>
+        <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: item.tagColor, marginBottom: 6, fontFamily: "'Nunito', sans-serif" }}>{item.tag}</div>
+        <h3 style={{ fontFamily: "'Nunito', sans-serif", fontWeight: 800, fontSize: 15, color: S.text, marginBottom: 6 }}>{item.emoji} {item.title}</h3>
+        <p style={{ fontSize: 12, color: S.muted, lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const [tab, setTab] = useState("work");
   const [activeCS, setActiveCS] = useState(null);
@@ -220,8 +268,17 @@ export default function App() {
               <div style={{ flex: 1, height: 1, background: S.border }} />
               <span style={{ fontFamily: "'Caveat', cursive", fontSize: 14, color: "#BBBBBB" }}>3 live · 3 coming</span>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: 14 }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: 14, marginBottom: 40 }}>
               {WORK.map(item => <WorkCard key={item.id} item={item} />)}
+            </div>
+
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 20 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", fontFamily: "'Nunito', sans-serif" }}>Motion & Interaction</span>
+              <div style={{ flex: 1, height: 1, background: S.border }} />
+              <span style={{ fontFamily: "'Caveat', cursive", fontSize: 14, color: "#BBBBBB" }}>After Effects · Figma</span>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))", gap: 14 }}>
+              {MOTION.map(item => <MotionCard key={item.id} item={item} />)}
             </div>
           </div>
         )}

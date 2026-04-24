@@ -49,7 +49,7 @@ const CASE_STUDIES = [
       {
         type: "intro",
         subhead: "Amplitude aims to achieve product-led growth by implementing a self serve subscription plan to enhance free-to-paid monetization.",
-        image: "/amplitude-modal.png",
+        image: "/Annual-2.png",
       },
       {
         type: "stats",
@@ -82,9 +82,9 @@ const CASE_STUDIES = [
       {
         type: "images", title: "Final Outcome",
         images: [
-          "/amplitude-pricing.png",
-          "/amplitude-checkout.png",
-          "/amplitude-pricing.png",
+          "/Annual-2.png",
+          "/Pricing-1.png",
+          "/Screenshot-2023-03-07-at-3.06-1-1.png",
         ]
       },
     ],
@@ -98,7 +98,7 @@ const CASE_STUDIES = [
       {
         type: "intro",
         subhead: "Ads platform manager helps marketers connect their social marketing channels with Adroll and import their data from any external platform.",
-        image: "/nextroll-hero.png",
+        image: "/image-233.png",
       },
       {
         type: "stats",
@@ -132,17 +132,17 @@ const CASE_STUDIES = [
       {
         type: "imageSection", title: "Selecting a Campaign",
         body: "First step is selecting a campaign. Value props for every campaign type help users make the best decision.",
-        image: "/nextroll-campaign.png",
+        image: "/image-229-1.png",
       },
       {
         type: "imageSection", title: "Connecting Channels",
         body: "Users select all the channels they want to connect. The top section ensures users have all the information along with a step-by-step guided video.",
-        image: "/nextroll-connect.png",
+        image: "/image-232-2.png",
       },
       {
         type: "imageSection", title: "Real-time Feedback",
         body: "A side panel breaks the platform down to give more clarity and real-time feedback on the connection steps.",
-        image: "/nextroll-integrations.png",
+        image: "/image-230-1.png",
       },
     ],
   },
@@ -155,7 +155,7 @@ const CASE_STUDIES = [
       {
         type: "intro",
         subhead: "A catalog subscription plan providing unlimited access to 3,000+ courses, Specializations, and Professional Certificates.",
-        image: "/coursera-hero.png",
+        image: "/615defe2ae8b99bbfe1c53fa_Enrollment-Page-Annual@2x-1-1.png",
       },
       {
         type: "stats",
@@ -184,8 +184,9 @@ const CASE_STUDIES = [
       {
         type: "images", title: "Final Outcome",
         images: [
-          "/coursera-features.png",
-          "/coursera-search.png",
+          "/2 (1).png",
+          "/3-2.png",
+          "/3-1.png",
         ]
       },
     ],
@@ -303,7 +304,7 @@ function CaseStudyReader({ item, onBack }) {
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "0 0 80px", animation: "fadeUp 0.4s ease" }}>
-      <button onClick={onBack} style={{ background: "none", border: `1.5px solid ${S.border}`, borderRadius: 20, padding: "7px 16px", fontSize: 13, color: S.muted, cursor: "pointer", fontFamily: "'Nunito', sans-serif", fontWeight: 700, marginBottom: 40, display: "flex", alignItems: "center", gap: 6, position: "sticky", top: 16, zIndex: 10, background: "#FAFAF8" }}>
+      <button onClick={onBack} style={{ background: "none", border: `1.5px solid ${S.border}`, borderRadius: 20, padding: "7px 16px", fontSize: 13, color: S.muted, cursor: "pointer", fontFamily: "'Nunito', sans-serif", fontWeight: 700, marginBottom: 40, display: "flex", alignItems: "center", gap: 6 }}>
         ← Back to Case Studies
       </button>
 

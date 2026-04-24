@@ -83,7 +83,7 @@ const CASE_STUDIES = [
         type: "images", title: "Final Outcome",
         images: [
           "/amplitude-pricing.png",
-          "/amplitude-pricing.png",
+          "/amplitude-checkout.png",
           "/amplitude-pricing.png",
         ]
       },
@@ -184,7 +184,7 @@ const CASE_STUDIES = [
       {
         type: "images", title: "Final Outcome",
         images: [
-          "/2 (1).png",
+          "/coursera-features.png",
           "/coursera-search.png",
           "/coursera-success.png",
         ]

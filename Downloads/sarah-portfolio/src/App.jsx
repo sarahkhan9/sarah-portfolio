@@ -186,7 +186,6 @@ const CASE_STUDIES = [
         images: [
           "/coursera-features.png",
           "/coursera-search.png",
-          "/coursera-success.png",
         ]
       },
     ],
@@ -304,7 +303,7 @@ function CaseStudyReader({ item, onBack }) {
 
   return (
     <div style={{ maxWidth: 720, margin: "0 auto", padding: "0 0 80px", animation: "fadeUp 0.4s ease" }}>
-      <button onClick={onBack} style={{ background: "none", border: `1.5px solid ${S.border}`, borderRadius: 20, padding: "7px 16px", fontSize: 13, color: S.muted, cursor: "pointer", fontFamily: "'Nunito', sans-serif", fontWeight: 700, marginBottom: 40, display: "flex", alignItems: "center", gap: 6 }}>
+      <button onClick={onBack} style={{ background: "none", border: `1.5px solid ${S.border}`, borderRadius: 20, padding: "7px 16px", fontSize: 13, color: S.muted, cursor: "pointer", fontFamily: "'Nunito', sans-serif", fontWeight: 700, marginBottom: 40, display: "flex", alignItems: "center", gap: 6, position: "sticky", top: 16, zIndex: 10, background: "#FAFAF8" }}>
         ← Back to Case Studies
       </button>
 

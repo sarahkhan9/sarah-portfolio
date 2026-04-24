@@ -49,7 +49,7 @@ const CASE_STUDIES = [
       {
         type: "intro",
         subhead: "Amplitude aims to achieve product-led growth by implementing a self serve subscription plan to enhance free-to-paid monetization.",
-        image: "/Annual-2.png",
+        image: "/amplitude-modal.png",
       },
       {
         type: "stats",
@@ -82,9 +82,9 @@ const CASE_STUDIES = [
       {
         type: "images", title: "Final Outcome",
         images: [
-          "/Annual-2.png",
-          "/Pricing-1.png",
-          "/Screenshot-2023-03-07-at-3.06-1-1.png",
+          "/amplitude-modal.png",
+          "/amplitude-pricing.png",
+          "/amplitude-checkout.png",
         ]
       },
     ],
@@ -98,7 +98,7 @@ const CASE_STUDIES = [
       {
         type: "intro",
         subhead: "Ads platform manager helps marketers connect their social marketing channels with Adroll and import their data from any external platform.",
-        image: "/image-233.png",
+        image: "/nextroll-hero.png",
       },
       {
         type: "stats",
@@ -132,17 +132,17 @@ const CASE_STUDIES = [
       {
         type: "imageSection", title: "Selecting a Campaign",
         body: "First step is selecting a campaign. Value props for every campaign type help users make the best decision.",
-        image: "/image-229-1.png",
+        image: "/nextroll-campaign.png",
       },
       {
         type: "imageSection", title: "Connecting Channels",
         body: "Users select all the channels they want to connect. The top section ensures users have all the information along with a step-by-step guided video.",
-        image: "/image-232-2.png",
+        image: "/nextroll-connect.png",
       },
       {
         type: "imageSection", title: "Real-time Feedback",
         body: "A side panel breaks the platform down to give more clarity and real-time feedback on the connection steps.",
-        image: "/image-230-1.png",
+        image: "/nextroll-integrations.png",
       },
     ],
   },
@@ -155,7 +155,7 @@ const CASE_STUDIES = [
       {
         type: "intro",
         subhead: "A catalog subscription plan providing unlimited access to 3,000+ courses, Specializations, and Professional Certificates.",
-        image: "/615defe2ae8b99bbfe1c53fa_Enrollment-Page-Annual@2x-1-1.png",
+        image: "/coursera-hero.png",
       },
       {
         type: "stats",
@@ -184,9 +184,9 @@ const CASE_STUDIES = [
       {
         type: "images", title: "Final Outcome",
         images: [
-          "/2 (1).png",
-          "/3-2.png",
-          "/3-1.png",
+          "/coursera-features.png",
+          "/coursera-search.png",
+          "/coursera-success.png",
         ]
       },
     ],

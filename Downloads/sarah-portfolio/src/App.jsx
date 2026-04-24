@@ -82,7 +82,7 @@ const CASE_STUDIES = [
       {
         type: "images", title: "Final Outcome",
         images: [
-          "/amplitude-modal.png",
+          "/amplitude-pricing.png",
           "/amplitude-pricing.png",
           "/amplitude-pricing.png",
         ]
